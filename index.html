@@ -295,10 +295,32 @@
         color: #00abcc;
         opacity: 0.4;
       }
+      .markdown-section em {
+        color: #00abcc;
+      }
 
       .page_toc .active {
         border-left: none !important;
         padding-left: 10px;
+      }
+
+      .page_toc ul a {
+        font-size: 0.8em !important;
+      }
+
+      .nav {
+        width: var(--toc-width, 300px);
+        align-self: flex-start;
+        flex: 0 0 auto;
+      }
+
+      .page_toc {
+        position: fixed;
+        border-left-style: solid;
+        border-left-width: 1px;
+        border-left-color: rgba(0, 0, 0, 0.07);
+        border-image-slice: 1;
+        padding-left: 25px;
       }
     </style>
   </head>
@@ -311,7 +333,7 @@
         toc: {
           scope: ".markdown-section",
           headings: "h1, h2, h3, h4, h5, h6",
-          title: "Table of Contents"
+          title: "Contents"
         },
         plantuml: {
           skin: "default"
