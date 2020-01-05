@@ -206,6 +206,7 @@
       .markdown-section p {
         line-height: 1.8em;
         margin-bottom: 2em;
+        text-align: justify;
       }
       .markdown-section pre {
         -moz-osx-font-smoothing: initial;
@@ -338,6 +339,9 @@
         plantuml: {
           skin: "default"
         },
+        alias: {
+          "/.*/_sidebar.md": "/_sidebar.md"
+        },
         loadSidebar: true,
         logo: "./navBarLogo.png",
         name: "Goat - API",
@@ -383,7 +387,7 @@
     <script src="//unpkg.com/docsify-footer-enh/dist/docsify-footer-enh.min.js"></script>
 
     <script>
-      EditOnGithubPlugin.create("/", docEditBase, title);
+      // EditOnGithubPlugin.create("/", docEditBase, title);
     </script>
   </body>
 </html>
