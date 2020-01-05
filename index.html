@@ -12,6 +12,26 @@
 
     <link rel="stylesheet" href="//unpkg.com/docsify/themes/vue.css" />
     <link rel="stylesheet" href="https://use.typekit.net/ins2wgm.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/docsify-toc@1.0.0/dist/toc.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@fortawesome/fontawesome-free/css/fontawesome.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@fortawesome/fontawesome-free/css/brands.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@fortawesome/fontawesome-free/css/regular.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@fortawesome/fontawesome-free/css/solid.css"
+    />
     <style>
       html {
         font-size: 16px;
@@ -62,11 +82,7 @@
         transition: transform 0.25s ease-out;
         width: 350px;
         z-index: 20;
-        background-image: linear-gradient(
-          0deg,
-          rgb(255, 255, 255),
-          rgb(245, 245, 250)
-        );
+        background-image: linear-gradient(0deg, #212428, #212428);
       }
 
       section.cover p {
@@ -104,7 +120,7 @@
         display: block;
         font-size: 0.98em;
         font-weight: 600;
-        color: #090910;
+        color: white;
         text-decoration: none;
         margin-bottom: 0;
         cursor: pointer;
@@ -119,7 +135,7 @@
         display: block;
         font-size: 0.98em;
         font-weight: 400;
-        color: #090910;
+        color: white;
         text-decoration: none;
         margin-bottom: 0;
         cursor: pointer;
@@ -131,6 +147,11 @@
       .sidebar ul {
         margin: 0 0 0 50px;
         padding: 0;
+      }
+      .sidebar ul li.active > a {
+        border-right: 4px solid !important;
+        color: #00abcc;
+        font-weight: 600;
       }
 
       h1 a span {
@@ -186,6 +207,99 @@
         line-height: 1.8em;
         margin-bottom: 2em;
       }
+      .markdown-section pre {
+        -moz-osx-font-smoothing: initial;
+        -webkit-font-smoothing: initial;
+        background-color: #f8f8f8;
+        font-family: "Roboto Mono", Monaco, courier, monospace;
+        line-height: 1.5rem;
+        margin: 2.2em 0;
+        overflow: auto;
+        padding: 0 1rem;
+        position: relative;
+        word-wrap: normal;
+      }
+
+      .sidebar-toggle {
+        background-color: transparent;
+        background-color: transparent;
+      }
+      .markdown-section {
+        margin: 0 auto;
+        max-width: 800px !important;
+        padding: 30px 15px 40px 65px;
+        position: relative;
+      }
+
+      .markdown-section {
+        flex: 1 1 0%;
+        margin: 0 48px !important;
+      }
+
+      .page_toc ul a:hover span {
+        color: #00abcc;
+        border-bottom: none !important;
+        text-decoration: none !important;
+      }
+
+      .pagination-item-title {
+        font-size: 1.6em;
+        color: #00abcc;
+        opacity: 0.6;
+      }
+
+      .docsify-pagination-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        overflow: hidden;
+        margin: 5em 0 1em;
+        border-top: none !important;
+      }
+
+      .page_toc > ul > li > a > span::before {
+        content: "#";
+        font-weight: 400;
+        margin-left: -14px;
+        position: absolute;
+        font-size: 16px;
+        color: #00abcc;
+      }
+
+      .page_toc > ul > li > ul > li > a > span::before {
+        content: "#";
+        font-weight: 400;
+        margin-left: -14px;
+        position: absolute;
+        font-size: 14px;
+        color: #00abcc;
+        opacity: 0.6;
+      }
+
+      .page_toc > ul > li > ul > li > ul > li > a > span::before {
+        content: "#";
+        font-weight: 400;
+        margin-left: -14px;
+        position: absolute;
+        font-size: 12px;
+        color: #00abcc;
+        opacity: 0.5;
+      }
+
+      .page_toc > ul > li > ul > li > ul > li > ul > li > a > span::before {
+        content: "#";
+        font-weight: 400;
+        margin-left: -14px;
+        position: absolute;
+        font-size: 10px;
+        color: #00abcc;
+        opacity: 0.4;
+      }
+
+      .page_toc .active {
+        border-left: none !important;
+        padding-left: 10px;
+      }
     </style>
   </head>
   <!-- #F7CE45 -->
@@ -194,6 +308,14 @@
     <div id="app"></div>
     <script>
       window.$docsify = {
+        toc: {
+          scope: ".markdown-section",
+          headings: "h1, h2, h3, h4, h5, h6",
+          title: "Table of Contents"
+        },
+        plantuml: {
+          skin: "default"
+        },
         loadSidebar: true,
         logo: "./navBarLogo.png",
         name: "Goat - API",
@@ -201,9 +323,28 @@
         coverpage: true,
         auto2top: true,
         autoHeader: false,
-        maxLevel: 2,
+        maxLevel: 1,
         repo: "",
-        search: "auto"
+        search: "auto",
+        tabs: {
+          persist: true, // default
+          sync: true, // default
+          theme: "material", // default
+          tabComments: true, // default
+          tabHeadings: true // default
+        },
+        pagination: {
+          previousText: "Previous",
+          nextText: "Next",
+          crossChapter: true
+        },
+        footer: {
+          copy: "<span>Goat &copy; 2020.</span>",
+          auth: "Goat API",
+          pre: "<hr/>",
+          style: "text-align: center;",
+          style: "className"
+        }
       };
     </script>
     <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
@@ -212,6 +353,13 @@
     <script src="https://unpkg.com/docsify-copy-code@2"></script>
     <script src="//unpkg.com/prismjs/components/prism-bash.min.js"></script>
     <script src="//unpkg.com/docsify-edit-on-github@1.0.1/index.js"></script>
+    <script src="https://unpkg.com/docsify-toc@1.0.0/dist/toc.js"></script>
+    <script src="//unpkg.com/docsify-fontawesome/dist/docsify-fontawesome.min.js"></script>
+    <script src="//unpkg.com/docsify-plantuml/dist/docsify-plantuml.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
+    <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+    <script src="//unpkg.com/docsify-footer-enh/dist/docsify-footer-enh.min.js"></script>
+
     <script>
       EditOnGithubPlugin.create("/", docEditBase, title);
     </script>
