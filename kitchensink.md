@@ -1,10 +1,12 @@
-# Installation
+# Kitchen title
 
-## Installation
+## Kitchen subtitle
 
-### Server Requirements
+In here you will be able to see all the components that you can use to generate amazing docs using Docsify.
 
-#### Via Laravel Installer
+### This is a section title
+
+#### This is a text section title
 
 !> **Time** is money, my friend!
 
@@ -34,7 +36,13 @@ var s = "JavaScript syntax highlighting";
 alert(s);
 ```
 
-Now we will watch an amazing video
+### Embed videos
+
+You can embed videos by using HTML
+
+<!-- tabs:start -->
+
+#### ** Result **
 
  <iframe width="560" height="315"
 src="https://www.youtube.com/embed/MUQfKFzIOeU" 
@@ -42,9 +50,28 @@ frameborder="0"
 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
 allowfullscreen></iframe>
 
-And now check this diagram
+#### ** Code **
 
-### Section X
+```html
+<iframe
+  width="560"
+  height="315"
+  src="https://www.youtube.com/embed/MUQfKFzIOeU"
+  frameborder="0"
+  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+></iframe>
+```
+
+<!-- tabs:end -->
+
+### Diagrams
+
+All Diagrams use the \```plantuml``` sections. Check more details on [PlantUml](https://plantuml.com/en/) 's site
+
+<!-- tabs:start -->
+
+#### ** Result **
 
 ```plantuml
 @startmindmap
@@ -77,24 +104,40 @@ endlegend
 @endmindmap
 ```
 
-```plantuml
-@startuml
-actor Foo1
-boundary Foo2
-control Foo3
-entity Foo4
-database Foo5
-collections Foo6
-Foo1 -> Foo2 : To boundary
-Foo1 -> Foo3 : To control
-Foo1 -> Foo4 : To entity
-Foo1 -> Foo5 : To database
-Foo1 -> Foo6 : To collections
+#### ** Code **
 
-@enduml
+```markdown
+@startmindmap
+caption figure 1
+title My super title
+
+- <&flag>Debian
+  ** <&globe>Ubuntu \*** Linux Mint
+  **_ Kubuntu
+  _** Lubuntu
+  **\* KDE Neon
+  ** <&graph>LMDE
+  ** <&pulse>SolydXK
+  ** <&people>SteamOS
+  ** <&star>Raspbian with a very long name \*** <s>Raspmbc</s> => OSMC
+  \*\*\* <s>Raspyfi</s> => Volumio
+
+header
+My super header
+endheader
+
+center footer My super footer
+
+legend right
+Short
+legend
+endlegend
+@endmindmap
 ```
 
-## And now we have another example :fas fa-home fa-fw:
+<!-- tabs:end -->
+
+### Tabs
 
 <!-- tabs:start -->
 
@@ -111,3 +154,9 @@ Bonjour!
 Ciao!
 
 <!-- tabs:end -->
+
+### FontAwesome :fas fa-home fa-fw:
+
+```markdown
+:fas fa-home fa-fw:
+```

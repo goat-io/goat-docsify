@@ -2,7 +2,7 @@
 
 ### Why did we created GOAT?
 
-> GOAT is **NOT a Framework**, but a collection of good Open Source tools.
+> GOAT is **NOT a Framework**, but a collection of Open Source tools.
 
 #### The Beginning
 
