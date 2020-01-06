@@ -127,6 +127,11 @@ section.cover .cover-main > p:last-child a {
   letter-spacing: -0.5px;
 }
 
+.sidebar ul li a:hover {
+  margin-left: 7px;
+  text-decoration: none;
+}
+
 .sidebar ul li ul li a {
   border-bottom: none;
   display: block;
