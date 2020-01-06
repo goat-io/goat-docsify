@@ -49,3 +49,33 @@ Visit https://nodejs.org/en/download/
 Ciao!
 
 <!-- tabs:end -->
+
+#### Installing GOAT
+
+GOAT can be use either with NPM or YARN. So, before using GOAT, make sure you have at least one of them installed on your machine.
+Open your terminal and follow this steps
+
+Using NPM
+
+```bash
+npm install --global @goatlab/goat-cli
+
+```
+
+Once installed, your machine should have the goat command available. Verify the installation by running
+
+```bash
+goat --help
+
+```
+
+You should see the available commands that goat-cli provides.
+
+![alt text](imgs/goat-cli.png "Goat-CLI")
+
+The `goat new` command will create a new GOAT project in the directory you specify. For instance, `goat new app` will create a directory named app containing a fresh GOAT installation with all of GOAT's dependencies already installed
+
+```bash
+goat new app
+
+```
