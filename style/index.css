@@ -72,7 +72,7 @@ section.cover .cover-main {
 }
 
 .sidebar {
-  /* border-right: 1px solid rgba(0,0,0,.07); */
+  overflow: hidden;
   position: fixed;
   overflow-y: auto;
   top: 0;
