@@ -62,12 +62,33 @@
       }
       .search {
         position: absolute;
-        width: 80%;
+        width: 75%;
         top: 100px;
         border-top: 1px solid #eeeeee;
         z-index: 10;
         background-color: #ffffff;
         margin: 20px 30px 0px 35px;
+      }
+      .search .results-panel.show {
+        width: 40%;
+        background-color: white;
+        z-index: 20;
+        display: block;
+        position: fixed;
+        border: solid 1px #00000029;
+        margin-top: 10px;
+        max-height: 300px;
+        overflow: auto;
+      }
+
+      @media screen and (max-width: 800px) {
+        .search .results-panel.show {
+          width: 80% !important;
+        }
+      }
+
+      .search .clear-button svg {
+        transform: scale(1) !important;
       }
 
       .sidebar > h1 {
