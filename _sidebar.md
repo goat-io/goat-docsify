@@ -7,5 +7,4 @@
   - [Configuration](/getting-started/configuration.md)
   - [Directory Structure](/getting-started/directory-structure.md)
   - [Deployment](/getting-started/deployment.md)
-- [H](/)
 - [Kitchen](kitchensink.md)
