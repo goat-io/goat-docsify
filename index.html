@@ -10,6 +10,15 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
 
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#212428" />
+    <meta name="msapplication-TileColor" content="#212428" />
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png" />
+    <meta name="theme-color" content="#212428" />
+
     <link rel="stylesheet" href="//unpkg.com/docsify/themes/vue.css" />
     <link rel="stylesheet" href="https://use.typekit.net/ins2wgm.css" />
     <link
@@ -322,6 +331,12 @@
         border-left-color: rgba(0, 0, 0, 0.07);
         border-image-slice: 1;
         padding-left: 25px;
+      }
+
+      @media screen and (max-width: 800px) {
+        .page_toc {
+          display: none;
+        }
       }
     </style>
   </head>
