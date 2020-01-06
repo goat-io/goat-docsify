@@ -6,6 +6,27 @@
 
 #### Via Laravel Installer
 
+!> **Time** is money, my friend!
+
+?> _TODO_ unit test
+
+- [ ] foo
+- bar
+- [x] baz
+- [] bam <~ not working
+  - [ ] bim
+  - [ ] lim
+
+![logo](https://docsify.js.org/_media/icon.svg ":size=50x100")
+
+<details>
+<summary>Self-assessment (Click to expand)</summary>
+
+- Abc
+- Abc
+
+</details>
+
 First, download the Laravel installer using Composer:
 
 ```javascript
