@@ -1,1 +1,0 @@
-> A Quasar proj

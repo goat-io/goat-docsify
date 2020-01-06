@@ -52,9 +52,10 @@
       textarea {
         font-family: scandia-web, sans-serif;
         font-weight: 400;
-        color: #090910;
+        color: rgba(9, 9, 16, 0.7);
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
+        font-size: 1rem;
       }
       .app-name-link > img {
         height: 70px;
@@ -185,7 +186,7 @@
       }
 
       h4 a span {
-        font-size: 0.75em !important;
+        font-size: 1.05rem !important;
         letter-spacing: 0;
         font-weight: 500;
         color: #090910 !important;
@@ -220,7 +221,6 @@
       .markdown-section pre {
         -moz-osx-font-smoothing: initial;
         -webkit-font-smoothing: initial;
-        background-color: #f8f8f8;
         font-family: "Roboto Mono", Monaco, courier, monospace;
         line-height: 1.5rem;
         margin: 2.2em 0;
@@ -228,6 +228,8 @@
         padding: 0 1rem;
         position: relative;
         word-wrap: normal;
+        background: #fbfbfd;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
       }
 
       .sidebar-toggle {
@@ -337,6 +339,55 @@
         .page_toc {
           display: none;
         }
+      }
+      /*
+      .markdown-section ol {
+        list-style: none;
+        counter-reset: li;
+      }
+      .markdown-section ol li::before {
+        content: counter(li);
+        color: red;
+        width: 1em;
+        margin-left: -1.5em;
+        margin-right: 0.5em;
+        text-align: right;
+        direction: rtl;
+      }
+
+      .markdown-section li {
+        counter-increment: li;
+      }
+      */
+
+      .markdown-section ul,
+      .markdown-section ul:not(:first-of-type) {
+        list-style-type: none;
+        margin: 0 0 2.5em;
+        padding: 0;
+      }
+      .markdown-section ul > li::before {
+        content: "";
+        display: inline-flex;
+        top: 0.4em;
+        left: 0;
+        width: 9px;
+        height: 10px;
+        background: url(/img/icons/ul_marker.min.svg) no-repeat 50%;
+        background-size: contain;
+        margin-right: 1.25em;
+      }
+
+      .markdown-section ul > li p {
+        display: inline;
+      }
+
+      .markdown-section ul > li {
+        margin-bottom: 1rem;
+      }
+
+      .docsify-tabs--material .docsify-tabs__content {
+        padding-top: 30px;
       }
     </style>
   </head>
