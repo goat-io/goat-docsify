@@ -79,3 +79,12 @@ The `goat new` command will create a new GOAT project in the directory you speci
 goat new app
 
 ```
+
+#### Local Development Server
+
+As we already have **_NODE.JS_** installed in our machine, starting the development server is as easy as running `goat serve` inside the project's folder. This command will start the API server at `http://localhost:3000` and the API manager at `http://localhost:80`
+
+```bash
+goat serve
+
+```
