@@ -85,8 +85,8 @@
 
       .sidebar {
         /* border-right: 1px solid rgba(0,0,0,.07); */
+        position: fixed;
         overflow-y: auto;
-        position: absolute;
         top: 0;
         bottom: 0;
         transition: transform 0.25s ease-out;
@@ -236,6 +236,10 @@
         background-color: transparent;
         background-color: transparent;
       }
+      .sidebar-toggle span {
+        width: 25px;
+      }
+
       .markdown-section {
         margin: 0 auto;
         max-width: 800px !important;
@@ -405,6 +409,14 @@
 
       .docsify-tabs--material .docsify-tabs__content {
         padding-top: 30px;
+      }
+
+      body.close .sidebar-toggle {
+        background-color: transparent;
+        transition: 1s background-color;
+        width: 284px;
+        padding: 10px;
+        position: fixed;
       }
     </style>
   </head>
