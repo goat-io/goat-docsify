@@ -12,9 +12,9 @@ To install NODE.JS in your environment follow these instructions, depending on y
 
 <!-- tabs:start -->
 
-#### ** OSs **
+#### ** x **
 
-Select your OS
+Select your OS :fas fa-arrow-up:
 
 #### ** MAC **
 
@@ -52,7 +52,7 @@ Ciao!
 
 #### Installing GOAT
 
-GOAT can be use either with NPM or YARN. So, before using GOAT, make sure you have at least one of them installed on your machine.
+GOAT can be used either with NPM or YARN. So, before using GOAT, make sure you have at least one of them installed on your machine.
 Open your terminal and follow this steps
 
 Using NPM
