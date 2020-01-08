@@ -1,8 +1,8 @@
 # Motivation
 
-### Why did we created GOAT?
+### Why did we create GOAT?
 
-> GOAT is **NOT a Framework**, but a collection of Open Source tools.
+> GOAT is a collection of **Open Source tools** focused on developer experience .
 
 #### The Beginning
 
