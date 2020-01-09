@@ -14,6 +14,6 @@
 - [Digging Deeper](kitchensink.md)
 - [Security](kitchensink.md)
 - [Database](kitchensink.md)
-- [Fluent](kitchensink.md)
+- [Fluent](1.0/fluent/fluent.md)
 - [Testing](kitchensink.md)
 - [Official Packages](kitchensink.md)
