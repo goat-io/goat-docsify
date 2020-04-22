@@ -9,7 +9,7 @@
 - Define once, use in front and backend
 - Full Docker & Kubernetes deployment
 
-[GitHub](https://github.com/UN-FAO/fast-docker-api)
+[GitHub](https://github.com/goat-io/fluent)
 [Get Started](0.1.0/getting-started/installation)
 
 <!-- background color -->
