@@ -10,6 +10,8 @@
 - Full Docker & Kubernetes deployment
 
 [GitHub](https://github.com/UN-FAO/fast-docker-api)
-[Get Started](1.0/getting-started/installation)
+[Get Started](0.1.0/getting-started/installation)
+
+<!-- background color -->
 
 ![color](#212428)

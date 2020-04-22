@@ -42,11 +42,11 @@ node -v
 
 #### ** PC **
 
-Visit https://nodejs.org/en/download/
+Check out [Node Docs](https://nodejs.org/en/download/)
 
 #### ** Linux **
 
-Ciao!
+Check out [Node Docs](https://nodejs.org/en/download/package-manager/)
 
 <!-- tabs:end -->
 

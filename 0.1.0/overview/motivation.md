@@ -2,7 +2,7 @@
 
 ### Why did we create GOAT?
 
-> GOAT is a collection of **Open Source tools** focused on developer experience .
+> GOAT is the glue between amazing **Open Source tools** to help you develop faster!
 
 #### The Beginning
 
