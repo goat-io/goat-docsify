@@ -18,32 +18,34 @@ Fluent offers a handy configuration method that will get you up and running in s
 ```javascript
 import { Fluent } from "@gotlab/fluent";
 
-Fluent.config({
-  REMOTE_CONNECTORS: [{}],
-  LOCAL_CONNECTORS: [{}],
-  MERGE_CONNECTORS: [{}]
+new Fluent().config({
+  LOCAL_CONNECTORS: [],
+  MERGE_CONNECTORS: [],
+  REMOTE_CONNECTORS: [BackendConnector]
 });
 ```
 
 ## Connectors
 
-All Fluent connectors are independent libraries, so you will need to download them separetly.
+All Fluent connectors are independent from each other, so you will need to download them separetly.
 
-Here is an example of a REMOTE connector using @gotlab/fluent-formio
+Here is an example of a REMOTE connector using Loopback
 
 ```javascript
-import formio from "@gotlab/fluent-formio";
+import { Fluent } from "@gotlab/fluent";
+import { Loopback } from "@goatlab/fluent/dist/Providers/Loopback/LoopbackConnector";
 
-Fluent.config({
-  REMOTE_CONNECTORS: [
-    {
-      name: "formio",
-      baseUrl: "https://ydrahgggqviwquft.form.io/",
-      connector: formio
-    }
-  ],
-  LOCAL_CONNECTORS: [{}],
-  MERGE_CONNECTORS: [{}]
+const BackendConnector = {
+  baseUrl: "http://localhost:3001",
+  connector: Loopback,
+  default: true,
+  name: "backend"
+};
+
+new Fluent().config({
+  LOCAL_CONNECTORS: [],
+  MERGE_CONNECTORS: [],
+  REMOTE_CONNECTORS: [BackendConnector]
 });
 ```
 
@@ -53,24 +55,21 @@ You can use as many connectors as you like. All available connectors are listed 
 
 Remote connectors give you access to API's or Databases, such as MongoDB, Formio
 
-| Provider | Library                 |
-| -------- | ----------------------- |
-| Formio   | @gotlab/fluent-formio   |
-| Loopback | @gotlab/fluent-loopback |
+| Provider | Import path                                                                              |
+| -------- | ---------------------------------------------------------------------------------------- |
+| Formio   | import { FormioConnector } from "@goatlab/fluent/dist/Providers/Formio/FormioConnector"; |
+| Loopback | import { Loopback } from "@goatlab/fluent/dist/Providers/Loopback/LoopbackConnector";    |
 
 ### LOCAL
 
 Local connectors give you access to in Browser/Memory DB's such as LokiJs, IndexedDB, LocalStorage
 
-| Provider | Library             |
-| -------- | ------------------- |
-| LockiJS  | @gotlab/fluent-loki |
+| Provider | Import path                                                                        |
+| -------- | ---------------------------------------------------------------------------------- |
+| LockiJS  | import { LokiConnector } from "@goatlab/fluent/dist/Providers/Loki/LokiConnector"; |
+| Memory   | import { Loopback } from "@goatlab/fluent/dist/Providers/Memory/MemoryConnector";  |
 
 ### MERGE
 
 Merge connectors will pull from both Local and Remote storage providers and will merge results
 to give you access to all your data from one call
-
-| Provider    | Library            |
-| ----------- | ------------------ |
-| Loki-Formio | fluent-loki-formio |
