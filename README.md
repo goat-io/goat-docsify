@@ -1,6 +1,6 @@
 ## Goat - API
 
-Not sure if this is for you? Whatch it working!
+Let´s watch it working!
 
  <iframe width="560" height="315"
 src="https://www.youtube.com/embed/MUQfKFzIOeU" 
