@@ -2,7 +2,7 @@
 
 ### Why did we create GOAT?
 
-> GOAT is the glue between amazing **Open Source tools** to help you develop faster!
+> GOAT is the glue between amazing **Open Source tools** created to help you develop faster!
 
 #### The Beginning
 
@@ -32,5 +32,5 @@ Even with all the benefits that [Form.io]("https://www.form.io/") had, we now fa
 
 #### And then we created GOAT
 
-Given our journey, we now know exactly what we like. We love Laravel, Form.io Loopback and all the tools that we have seen, but somehow we want to mix them together, without the need to create a new framework, just by finding these reusable Open Sources pieces and glueing them together.
+Given our journey, we now know exactly what we like. We love Laravel (God! we got lot of inspiration from here!), Form.io, Loopback and all the tools that we have seen, but somehow we want to mix them together, without the need to create a new framework, just by finding these reusable Open Sources pieces and glueing them together.
 At the same time, we wanted to give especial emphasis on extensibility, giving developers flexibility to do whatever they like, while we take care of the tedious/repetitive work.

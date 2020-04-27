@@ -11,6 +11,8 @@ Here are some useful links to the Open Source repositories of the project
 
 - [Manager](https://github.com/goat-io/manager)
 - [Fluent](https://github.com/goat-io/fluent)
+- [Cli](https://github.com/goat-io/cli)
+- [Loopback Starter](https://github.com/goat-io/goat-loopback)
 
 ## Requesting Features
 
