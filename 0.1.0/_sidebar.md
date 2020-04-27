@@ -12,6 +12,10 @@
   - [Directory Structure](0.1.0/getting_started/directory-structure.md)
   - [Resources](0.1.0/getting_started/resources.md)
 
+- [Manager](0.1.0/manager/overview.md)
+
+  - [Form Builder](0.1.0/manager/form-builder.md)
+
 - [Fluent](0.1.0/fluent/fluent.md)
 
   - [Collection](0.1.0/fluent/collection.md)
