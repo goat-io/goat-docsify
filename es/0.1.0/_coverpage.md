@@ -10,6 +10,4 @@
 - Full Docker & Kubernetes deployment
 
 [GitHub](https://github.com/goat-io/fluent)
-[Get Started](0.1.0/getting_started/inspiration)
-
-![color](<var(--cover-bg-color)>)
+[Get Started](0.1.0/getting-started/installation)
