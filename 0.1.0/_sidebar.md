@@ -14,7 +14,7 @@
 
 - [Manager](0.1.0/manager/overview.md)
 
-  - [Form Builder](0.1.0/manager/form-builder.md)
+  - [API Builder](0.1.0/manager/api-builder.md)
 
 - [Fluent](0.1.0/fluent/fluent.md)
 

@@ -2,11 +2,11 @@
 
 ## Server requirements
 
-GOAT has minimal system requirements. As it is a **_NODE.JS_** tool, getting started is as easy as installing **_NODE.JS_** on your machine. Even when it could be possible to develop using **_DOCKER_**, we recommend having node installed to ease the process. We will use **_DOCKER_** for deployment and other purposes.
+GOAT has minimal system requirements. As it is a **_Node.JS_** tool, getting started is as easy as installing **_Node.JS_** on your machine. Even when it could be possible to develop using **_Docker_**, we recommend having node installed to ease the process. We will use **_Docker_** for deployment and other purposes.
 
 ### Installing Node.JS
 
-To install NODE.JS in your environment follow these instructions, depending on you OS.
+To install Node.JS in your environment follow these instructions, depending on you OS.
 
 <!-- tabs:start -->
 
@@ -30,7 +30,7 @@ Select your OS :fas fa-arrow-up:
 
 ![alt text](imgs/NodeInstall-terminal.png "Open the Terminal")
 
-- Verify that Node.js is installed correctly by running
+- Verify that Node.JS is installed correctly by running
 
 ```bash
 node -v
@@ -94,7 +94,7 @@ And then, if you go inside the "app" folder using `cd app && ls`. You will find 
 
 ### Local Development Server
 
-As we already have **_NODE.JS_** installed in our machine, starting the development server is as easy as running `goat serve` inside the project's folder. This command will start the API server at `http://localhost:3001` and the API manager at `http://localhost:3001/#`
+As we already have **_Node.JS_** installed in our machine, starting the development server is as easy as running `goat serve` inside the project's folder. This command will start the API server at `http://localhost:3001` and the API manager at `http://localhost:3001/#`
 
 ![alt text](imgs/cli-serve.png "Goat serve")
 
