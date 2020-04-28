@@ -195,3 +195,15 @@ h2 a span::before {
 .docsify-tabs--material .docsify-tabs__content {
   padding-top: 30px;
 }
+
+img.medium-zoom-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  -o-box-shadow: 12px 12px 29px #555;
+  -icab-box-shadow: 12px 12px 29px #555;
+  -khtml-box-shadow: 12px 12px 29px #555;
+  -moz-box-shadow: 12px 12px 29px #555;
+  -webkit-box-shadow: 12px 12px 29px #555;
+  box-shadow: 12px 12px 29px #555;
+}

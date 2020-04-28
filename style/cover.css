@@ -38,3 +38,7 @@ section.cover .cover-main > p:last-child a {
   text-decoration: none;
   transition: all 0.15s ease;
 }
+
+section.cover .cover-main > p:last-child a:last-child:hover {
+    color: var(--cover-action-button-hover);
+}
